@@ -44,21 +44,21 @@
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach var="ticket" items="${sessionScope.tickets}">
+                <c:forEach var="ticket" items="${requestScope.tickets}">
                     <tr>
                         <td>${ticket.id}</td>
                         <td>${ticket.orderDate}</td>
                         <td>${ticket.visitDate}</td>
                         <td>${ticket.ticketType}</td>
                         <td>
-                            <c:if test="${sessionScope.ticketOwners.containsKey(ticket.visitorId)}">
-                                <c:out value="${sessionScope.ticketOwners.get(ticket.visitorId).email}"/>
+                            <c:if test="${requestScope.ticketOwners.containsKey(ticket.visitorId)}">
+                                <c:out value="${requestScope.ticketOwners.get(ticket.visitorId).email}"/>
                             </c:if>
                         </td>
                         <td> ${ticket.exhibitionId}</td>
                         <td>
-                            <c:if test="${sessionScope.ticketExhibitions.containsKey(ticket.exhibitionId)}">
-                                <c:out value="${sessionScope.ticketExhibitions.get(ticket.exhibitionId).name}"/>
+                            <c:if test="${requestScope.ticketExhibitions.containsKey(ticket.exhibitionId)}">
+                                <c:out value="${requestScope.ticketExhibitions.get(ticket.exhibitionId).name}"/>
                             </c:if>
                         </td>
                         <td>${ticket.ticketPrice}</td>

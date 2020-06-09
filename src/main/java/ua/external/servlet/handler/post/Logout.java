@@ -21,7 +21,6 @@ public class Logout implements ServletHandler {
         request.getSession().removeAttribute("email");
         request.getSession().removeAttribute("password");
         request.getSession().removeAttribute("role");
-        request.getSession().removeAttribute("message");
         request.getSession().removeAttribute("dataForTicketsOrder");
         request.getSession().setAttribute("userInSystem", false);
         request.getSession().invalidate();

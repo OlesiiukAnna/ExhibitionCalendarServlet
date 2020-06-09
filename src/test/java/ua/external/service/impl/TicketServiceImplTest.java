@@ -200,7 +200,7 @@ public class TicketServiceImplTest {
     @Test(expected = NoSuchUserException.class)
     public void shouldThrowExceptionWhenUserNotFound() throws TicketsRunOutForTheDateException, NoSuchUserException, NoSuchExhibitionException, InvalidDataException {
         when(exhibitionDao.getById(ticket.getExhibition().getId())).thenReturn(Optional.of(exhibition));
-        when(userDao.getById(ticket.getVisitor().getId())).thenReturn(Optional.empty());
+        when(userDao.getById(ticket.getUser().getId())).thenReturn(Optional.empty());
         testedInstance.save(ticketDto);
         verify(ticketDao, never()).save(any());
     }

@@ -11,7 +11,7 @@ public class Ticket {
     private LocalDate orderDate;
     private TicketType ticketType;
     private int ticketPrice;
-    private User visitor;
+    private User user;
     private Exhibition exhibition;
     private boolean isPaid;
 
@@ -20,24 +20,24 @@ public class Ticket {
 
     public Ticket(LocalDate visitDate, LocalDate orderDate,
                   TicketType ticketType, int ticketPrice,
-                  User visitor, Exhibition exhibition) {
+                  User user, Exhibition exhibition) {
         this.visitDate = visitDate;
         this.orderDate = orderDate;
         this.ticketType = ticketType;
         this.ticketPrice = ticketPrice;
-        this.visitor = visitor;
+        this.user = user;
         this.exhibition = exhibition;
     }
 
     public Ticket(int id, LocalDate visitDate, LocalDate orderDate,
                   TicketType ticketType, int ticketPrice, boolean isPaid,
-                  User visitor, Exhibition exhibition) {
+                  User user, Exhibition exhibition) {
         this.id = id;
         this.visitDate = visitDate;
         this.orderDate = orderDate;
         this.ticketType = ticketType;
         this.ticketPrice = ticketPrice;
-        this.visitor = visitor;
+        this.user = user;
         this.exhibition = exhibition;
         this.isPaid = isPaid;
     }
@@ -90,12 +90,12 @@ public class Ticket {
         this.exhibition = exhibition;
     }
 
-    public User getVisitor() {
-        return visitor;
+    public User getUser() {
+        return user;
     }
 
-    public void setVisitor(User visitor) {
-        this.visitor = visitor;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public boolean isPaid() {
@@ -114,7 +114,7 @@ public class Ticket {
                 ", orderDate=" + orderDate +
                 ", ticketType=" + ticketType +
                 ", exhibition=" + exhibition +
-                ", visitor=" + visitor +
+                ", visitor=" + user +
                 ", isPaid=" + isPaid +
                 '}';
     }

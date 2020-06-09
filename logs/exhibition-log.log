@@ -1,2 +1,8 @@
-355  [main] ERROR u.e.s.i.ExhibitionHallServiceImpl - null
-265  [main] ERROR u.e.s.i.ExhibitionHallServiceImpl - null
+361  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+373  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+404  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+405  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+310  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+331  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+380  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+383  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 

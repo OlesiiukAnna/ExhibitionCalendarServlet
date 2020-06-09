@@ -24,7 +24,7 @@
     </div>
     <h2><fmt:message key="headline.yourTickets"/></h2>
     <c:choose>
-        <c:when test="${empty sessionScope.myTickets}">
+        <c:when test="${empty requestScope.myTickets}">
             <p class="text-info">
                 <fmt:message key="info.noTickets"/>
             </p>
@@ -45,12 +45,12 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <c:forEach var="ticket" items="${sessionScope.myTickets}">
+                    <c:forEach var="ticket" items="${requestScope.myTickets}">
                         <tr>
                             <td>${ticket.id}</td>
                             <td>
-                                <c:if test="${sessionScope.ticketExhibitions.containsKey(ticket.exhibitionId)}">
-                                    <c:out value="${sessionScope.ticketExhibitions.get(ticket.exhibitionId).name}"/>
+                                <c:if test="${requestScope.ticketExhibitions.containsKey(ticket.exhibitionId)}">
+                                    <c:out value="${requestScope.ticketExhibitions.get(ticket.exhibitionId).name}"/>
                                 </c:if>
                             </td>
                             <td>${ticket.orderDate}</td>

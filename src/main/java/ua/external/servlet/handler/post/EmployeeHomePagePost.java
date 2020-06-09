@@ -32,11 +32,11 @@ public class EmployeeHomePagePost implements ServletHandler {
     public String handle(HttpServletRequest request, HttpServletResponse response) {
         ProcessHomePage.processPage(request, ticketService, exhibitionService);
 
-        int ticketToDelete = Integer.parseInt(request.getParameter("ticket-to-delete"));
-
-        if (ticketToDelete > 0) {
+        String ticketToDelete = request.getParameter("ticket-to-delete");
+        if (ticketToDelete != null && !ticketToDelete.isBlank()) {
             try {
-                ticketService.delete(ticketToDelete);
+                int ticketId = Integer.parseInt(ticketToDelete);
+                ticketService.delete(ticketId);
             } catch (TicketIsAlreadyPaidException e) {
                 logger.warn("Tickets are already paid", e);
             } catch (NoSuchTicketException e) {

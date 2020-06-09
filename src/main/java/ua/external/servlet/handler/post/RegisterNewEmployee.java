@@ -56,7 +56,7 @@ public class RegisterNewEmployee implements ServletHandler {
             request.setAttribute("isInvalidData", true);
             logger.warn("Invalid input data", e);
         } catch (NoSuchAlgorithmException e) {
-            logger.error("Password missed algorithm", e);
+            logger.error("PasswordEncryptor missed algorithm", e);
         }
 
         if (isSaved) {

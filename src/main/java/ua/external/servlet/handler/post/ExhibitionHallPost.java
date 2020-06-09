@@ -12,6 +12,7 @@ import ua.external.util.dto.ExhibitionHallDto;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -31,12 +32,17 @@ public class ExhibitionHallPost implements ServletHandler {
 
     @Override
     public String handle(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("exhibition-hall-id"));
-        Optional<ExhibitionHallDto> exhibitionHallDto = exhibitionHallService.getById(id);
-        request.setAttribute("exhibitionHall", exhibitionHallDto.get());
-
-        List<ExhibitionDto> exhibitions = exhibitionService.getAllByExhibitionHallId(id);
-        request.setAttribute("exhibitions", exhibitions);
+        List<ExhibitionDto> exhibitions = Collections.emptyList();
+        String incomeId = request.getParameter("exhibition-hall-id");
+        if (incomeId != null && !incomeId.isBlank()){
+            int id = Integer.parseInt(incomeId);
+            Optional<ExhibitionHallDto> exhibitionHallDto = exhibitionHallService.getById(id);
+            if (exhibitionHallDto.isPresent()){
+                request.setAttribute("exhibitionHall", exhibitionHallDto.get());
+                exhibitions = exhibitionService.getAllByExhibitionHallId(id);
+                request.setAttribute("exhibitions", exhibitions);
+            }
+        }
 
         try {
             CartStorage.addToCart(request, exhibitions);

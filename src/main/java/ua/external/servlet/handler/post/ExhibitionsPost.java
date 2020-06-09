@@ -27,13 +27,11 @@ public class ExhibitionsPost implements ServletHandler {
     public String handle(HttpServletRequest request, HttpServletResponse response) {
         List<ExhibitionDto> exhibitions = exhibitionService.getAll();
         request.setAttribute("exhibitions", exhibitions);
-
         try {
             CartStorage.addToCart(request, exhibitions);
         } catch (InvalidDataException e) {
             logger.info("incorrect input data ", e);
         }
-
         return EXHIBITIONS_JSP;
     }
 }

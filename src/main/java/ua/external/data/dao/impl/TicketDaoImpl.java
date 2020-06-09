@@ -158,7 +158,7 @@ public class TicketDaoImpl implements TicketDao<Ticket> {
         statement.setString(3, ticket.getTicketType().toString());
         statement.setInt(4, ticket.getTicketPrice());
         statement.setBoolean(5, ticket.isPaid());
-        statement.setInt(6, ticket.getVisitor().getId());
+        statement.setInt(6, ticket.getUser().getId());
         statement.setInt(7, ticket.getExhibition().getId());
     }
 

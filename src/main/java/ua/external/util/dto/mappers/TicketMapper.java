@@ -13,7 +13,7 @@ public class TicketMapper implements DtoMapper<TicketDto, Ticket> {
         dto.setOrderDate(ticket.getOrderDate());
         dto.setTicketType(ticket.getTicketType());
         dto.setTicketPrice(ticket.getTicketPrice());
-        dto.setVisitorId(ticket.getVisitor().getId());
+        dto.setVisitorId(ticket.getUser().getId());
         dto.setExhibitionId(ticket.getExhibition().getId());
         dto.setPaid(ticket.isPaid());
         return dto;

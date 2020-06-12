@@ -51,8 +51,8 @@
                         <td>${ticket.visitDate}</td>
                         <td>${ticket.ticketType}</td>
                         <td>
-                            <c:if test="${requestScope.ticketOwners.containsKey(ticket.visitorId)}">
-                                <c:out value="${requestScope.ticketOwners.get(ticket.visitorId).email}"/>
+                            <c:if test="${requestScope.ticketOwners.containsKey(ticket.userId)}">
+                                <c:out value="${requestScope.ticketOwners.get(ticket.userId).email}"/>
                             </c:if>
                         </td>
                         <td> ${ticket.exhibitionId}</td>

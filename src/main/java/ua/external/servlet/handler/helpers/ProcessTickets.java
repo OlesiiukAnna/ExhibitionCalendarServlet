@@ -23,7 +23,7 @@ public class ProcessTickets {
 
         Map<Integer, UserDto> userDtos = new ConcurrentHashMap<>();
         for (TicketDto ticketDto : tickets) {
-            userDtos.put(ticketDto.getVisitorId(), userService.getById(ticketDto.getVisitorId()).get());
+            userDtos.put(ticketDto.getUserId(), userService.getById(ticketDto.getUserId()).get());
         }
         request.setAttribute("ticketOwners", userDtos);
 

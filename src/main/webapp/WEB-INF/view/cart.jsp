@@ -33,17 +33,17 @@
         </p>
     </c:if>
     <c:if test="${requestScope.areTicketsRunOut}">
-        <p class="text-success" role="alert">
+        <p class="text-danger" role="alert">
             <fmt:message key="message.ticketsRunOut"/>
         </p>
     </c:if>
     <c:if test="${requestScope.isExhibitionNotFound}">
-        <p class="text-success" role="alert">
+        <p class="text-danger" role="alert">
             <fmt:message key="message.exhibitionNotFound"/>
         </p>
     </c:if>
     <c:if test="${requestScope.isUserInNotExists}">
-        <p class="text-success" role="alert">
+        <p class="text-danger" role="alert">
             <fmt:message key="message.userInNotExists"/>
         </p>
     </c:if>

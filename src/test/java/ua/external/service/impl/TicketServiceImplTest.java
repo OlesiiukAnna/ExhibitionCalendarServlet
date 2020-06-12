@@ -76,7 +76,7 @@ public class TicketServiceImplTest {
         ticketDto.setTicketType(TicketType.EMPLOYEE);
         ticketDto.setTicketPrice((int) (exhibition.getFullTicketPrice() * TicketType.EMPLOYEE.getPriceRate()));
         ticketDto.setPaid(false);
-        ticketDto.setVisitorId(user.getId());
+        ticketDto.setUserId(user.getId());
         ticketDto.setExhibitionId(exhibition.getId());
         dtoTickets = List.of(ticketDto);
 
@@ -178,7 +178,7 @@ public class TicketServiceImplTest {
 
     @Test(expected = InvalidDataException.class)
     public void shouldThrowExceptionWhenVisitorIdIsInvalid() throws TicketsRunOutForTheDateException, NoSuchUserException, NoSuchExhibitionException, InvalidDataException {
-        ticketDto.setVisitorId(-1);
+        ticketDto.setUserId(-1);
         testedInstance.save(ticketDto);
         verify(ticketDao, never()).save(any());
     }

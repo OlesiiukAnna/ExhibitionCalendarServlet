@@ -83,7 +83,7 @@ public class TicketServiceImpl implements TicketService<TicketDto> {
 
     private Ticket getAndCheckTicketFromTicketDto(TicketDto ticketDto) throws InvalidDataException, NoSuchExhibitionException, TicketsRunOutForTheDateException, NoSuchUserException {
         if (ticketDto.getVisitDate() == null || ticketDto.getTicketType() == null ||
-                ticketDto.getVisitorId() <= 0 || ticketDto.getExhibitionId() <= 0 ||
+                ticketDto.getUserId() <= 0 || ticketDto.getExhibitionId() <= 0 ||
                 ticketDto.getVisitDate().isBefore(LocalDate.now())) {
             logger.error("Invalid input data ");
             throw new InvalidDataException();
@@ -106,7 +106,7 @@ public class TicketServiceImpl implements TicketService<TicketDto> {
             throw new TicketsRunOutForTheDateException();
         }
 
-        Optional<User> visitor = userDao.getById(ticketDto.getVisitorId());
+        Optional<User> visitor = userDao.getById(ticketDto.getUserId());
         if (visitor.isEmpty()) {
             throw new NoSuchUserException();
         }

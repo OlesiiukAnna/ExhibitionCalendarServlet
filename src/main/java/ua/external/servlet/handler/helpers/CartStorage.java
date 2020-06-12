@@ -47,6 +47,6 @@ public class CartStorage {
     public static void removeFromCart(HttpServletRequest request, int id) {
         dataForTicketOrders = (List<DataForTicketOrder>) request.getSession().getAttribute("dataForTicketsOrder");
         dataForTicketOrders.removeIf(data -> data.getIdInCart() == id);
-        request.getSession().removeAttribute("wanted-ticket-id");
+//        request.getSession().removeAttribute("wanted-ticket-id");
     }
 }

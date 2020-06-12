@@ -56,7 +56,7 @@ public class CartPost implements ServletHandler {
                 TicketDto ticketDto = new TicketDto();
                 ticketDto.setVisitDate(data.getWantedVisitDate());
                 ticketDto.setTicketType(TicketType.valueOf(ticketTypes[i]));
-                ticketDto.setVisitorId(user.getId());
+                ticketDto.setUserId(user.getId());
                 ticketDto.setExhibitionId(data.getExhibitionId());
                 ticketDtos.add(ticketDto);
             }

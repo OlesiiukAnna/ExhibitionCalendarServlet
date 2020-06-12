@@ -45,7 +45,6 @@ public class Login implements ServletHandler {
         if (nonNull(session) &&
                 nonNull(session.getAttribute("email")) &&
                 nonNull(session.getAttribute("password"))) {
-
             final Role role = (Role) session.getAttribute("role");
             return menu.get(role);
         }

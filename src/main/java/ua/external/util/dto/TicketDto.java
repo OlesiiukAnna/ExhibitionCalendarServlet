@@ -10,7 +10,7 @@ public class TicketDto {
     private LocalDate orderDate;
     private TicketType ticketType;
     private int ticketPrice;
-    private int visitorId;
+    private int userId;
     private int exhibitionId;
     private boolean isPaid;
 
@@ -57,12 +57,12 @@ public class TicketDto {
         this.ticketPrice = ticketPrice;
     }
 
-    public int getVisitorId() {
-        return visitorId;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setVisitorId(int visitorId) {
-        this.visitorId = visitorId;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public int getExhibitionId() {
@@ -89,7 +89,7 @@ public class TicketDto {
                 ", orderDate=" + orderDate +
                 ", ticketType=" + ticketType +
                 ", ticketPrice=" + ticketPrice +
-                ", visitorId=" + visitorId +
+                ", userId=" + userId +
                 ", exhibitionId=" + exhibitionId +
                 ", isPaid=" + isPaid +
                 '}';

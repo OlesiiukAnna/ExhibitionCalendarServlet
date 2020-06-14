@@ -1,0 +1,80 @@
+210  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+223  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+238  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+239  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+265  [main] ERROR u.e.service.impl.UserServiceImpl - null
+266  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+268  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+269  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+270  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+272  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+277  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+316  [main] ERROR u.e.s.i.ExhibitionHallServiceImpl - null
+337  [main] WARN  u.e.s.impl.ExhibitionServiceImpl - Dates are not free or begin date after end date 
+343  [main] WARN  u.e.s.impl.ExhibitionServiceImpl - Dates are not free or begin date after end date 
+345  [main] WARN  u.e.s.impl.ExhibitionServiceImpl - Dates are not free or begin date after end date 
+346  [main] ERROR u.e.s.impl.ExhibitionServiceImpl - Exhibition hall with such id doesn't exists 
+190  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+196  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+212  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+213  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+237  [main] ERROR u.e.service.impl.UserServiceImpl - null
+238  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+240  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+241  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+242  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+245  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+251  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+290  [main] ERROR u.e.s.i.ExhibitionHallServiceImpl - null
+314  [main] WARN  u.e.s.impl.ExhibitionServiceImpl - Dates are not free or begin date after end date 
+319  [main] WARN  u.e.s.impl.ExhibitionServiceImpl - Dates are not free or begin date after end date 
+322  [main] WARN  u.e.s.impl.ExhibitionServiceImpl - Dates are not free or begin date after end date 
+324  [main] ERROR u.e.s.impl.ExhibitionServiceImpl - Exhibition hall with such id doesn't exists 
+179  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+184  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+196  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+197  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+229  [main] ERROR u.e.service.impl.UserServiceImpl - null
+230  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+234  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+235  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+236  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+238  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+243  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+278  [main] ERROR u.e.s.i.ExhibitionHallServiceImpl - null
+298  [main] WARN  u.e.s.impl.ExhibitionServiceImpl - Dates are not free or begin date after end date 
+306  [main] WARN  u.e.s.impl.ExhibitionServiceImpl - Dates are not free or begin date after end date 
+309  [main] WARN  u.e.s.impl.ExhibitionServiceImpl - Dates are not free or begin date after end date 
+310  [main] ERROR u.e.s.impl.ExhibitionServiceImpl - Exhibition hall with such id doesn't exists 
+184  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+189  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+206  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+207  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+233  [main] ERROR u.e.service.impl.UserServiceImpl - null
+234  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+237  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+238  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+239  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+240  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+245  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+279  [main] ERROR u.e.s.i.ExhibitionHallServiceImpl - null
+306  [main] WARN  u.e.s.impl.ExhibitionServiceImpl - Dates are not free or begin date after end date 
+313  [main] WARN  u.e.s.impl.ExhibitionServiceImpl - Dates are not free or begin date after end date 
+315  [main] WARN  u.e.s.impl.ExhibitionServiceImpl - Dates are not free or begin date after end date 
+316  [main] ERROR u.e.s.impl.ExhibitionServiceImpl - Exhibition hall with such id doesn't exists 
+211  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+216  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+233  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+233  [main] ERROR u.e.service.impl.TicketServiceImpl - Invalid input data 
+256  [main] ERROR u.e.service.impl.UserServiceImpl - null
+257  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+259  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+260  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+261  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+263  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+268  [main] ERROR u.e.service.impl.UserServiceImpl - Invalid input data 
+303  [main] ERROR u.e.s.i.ExhibitionHallServiceImpl - null
+328  [main] WARN  u.e.s.impl.ExhibitionServiceImpl - Dates are not free or begin date after end date 
+335  [main] WARN  u.e.s.impl.ExhibitionServiceImpl - Dates are not free or begin date after end date 
+338  [main] WARN  u.e.s.impl.ExhibitionServiceImpl - Dates are not free or begin date after end date 
+340  [main] ERROR u.e.s.impl.ExhibitionServiceImpl - Exhibition hall with such id doesn't exists 

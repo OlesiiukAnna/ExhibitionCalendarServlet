@@ -14,6 +14,8 @@ public class Servlet extends HttpServlet {
     private Map<String, ServletHandler> getHandlers;
     private Map<String, ServletHandler> postHandlers;
 
+    private static final String SERVLET_NAME = "/exhibition-calendar";
+
     @Override
     public void init() throws ServletException {
         Configuration configuration = new Configuration();
@@ -36,10 +38,14 @@ public class Servlet extends HttpServlet {
     private void processRequest(HttpServletRequest request, HttpServletResponse response,
                                 Map<String, ServletHandler> requestHandler) throws IOException, ServletException {
         String path = request.getRequestURI();
-        ServletHandler handler = requestHandler.get(path);
+        ServletHandler handler = requestHandler.get(path.replace(SERVLET_NAME, ""));
         String page = handler.handle(request, response);
         if (page.contains("redirect")) {
-            response.sendRedirect(page.replace("redirect:", ""));
+            if (path.contains(SERVLET_NAME)) {
+                response.sendRedirect(page.replace("redirect:", SERVLET_NAME));
+            } else {
+                response.sendRedirect(page.replace("redirect:", ""));
+            }
         } else {
             request.getRequestDispatcher(page).forward(request, response);
         }

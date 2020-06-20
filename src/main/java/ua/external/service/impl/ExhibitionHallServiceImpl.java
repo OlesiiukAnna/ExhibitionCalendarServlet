@@ -68,7 +68,7 @@ public class ExhibitionHallServiceImpl implements ExhibitionHallService<Exhibiti
         try {
             return exhibitionHallDao.save(exhibitionHall);
         } catch (DuplicateValueException e) {
-            logger.error(e.getMessage());
+            logger.error("Such exhibition hall is already exists", e);
             throw new SuchExhibitionHallIsAlreadyExistsException();
         }
     }
